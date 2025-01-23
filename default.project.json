@@ -1,0 +1,6 @@
+{
+	"name": "NodeGraph",
+	"tree": {
+		"$path": "src"
+	}
+}

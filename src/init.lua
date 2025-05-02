@@ -11,6 +11,9 @@
 local Node = require(script:WaitForChild("Node"))
 local Edge = require(script:WaitForChild("Edge"))
 
+export type Node = Node.Node
+export type Edge = Edge.Edge
+
 type NodeGraphProps = {
     Nodes: {[number]: Node.Node},
     Edges: {[number]: Edge.Edge},

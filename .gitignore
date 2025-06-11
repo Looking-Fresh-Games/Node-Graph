@@ -41,3 +41,7 @@ luac.out
 
 # Rojo
 sourcemap.json
+/*.rbxl
+/*.rbxlx
+/*.rbxm
+/*.rbxmx

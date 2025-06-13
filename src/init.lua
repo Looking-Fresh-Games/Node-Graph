@@ -72,8 +72,15 @@ function NodeGraph:AddNode(dataRecord: { [unknown]: unknown }): Node.Node
 end
 
 function NodeGraph:RemoveNode(node: Node.Node): boolean
+	local edges = self:GetEdgesForNode(node)
+
+	if not edges then
+		-- No edges to remove
+		return false
+	end
+
 	-- Remove all edges this node belongs to
-	for _, edge in self:GetEdgesForNode(node) do
+	for _, edge in edges do
 		self:RemoveEdge(edge)
 	end
 

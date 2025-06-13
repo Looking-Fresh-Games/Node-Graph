@@ -20,6 +20,7 @@ type EdgeProps = {
 
 local Edge = {}
 Edge.__index = Edge
+
 export type Edge = typeof(setmetatable({} :: EdgeProps, Edge))
 
 function Edge.new(node0: Node.Node, node1: Node.Node, weight: number?)
